@@ -1,0 +1,1 @@
+export const serverUrl = "https://breakbag-server-p2o59.ondigitalocean.app"

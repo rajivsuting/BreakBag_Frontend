@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Vanilla CSS for Custom Scrollbar */
+
+/* Style the entire scrollbar (make it thinner) */
+.sidebar::-webkit-scrollbar {
+  width: 6px; /* Thinner width */
+  height: 6px; /* This also applies to horizontal scrollbars if any */
+}
+
+/* Remove the arrows on top and bottom */
+.sidebar::-webkit-scrollbar-button {
+  display: none; /* Hide arrows */
+}
+
+/* Track (scrollbar background) */
+.sidebar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Handle (scrollbar thumb) */
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #ff6a6a; /* Gray color for thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(235, 28, 36); /* Darker color when hovered */
+}
+
+
+/* Sidebar styles */
+.fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  width: 250px; /* Adjust based on your sidebar width */
+  background-color: #333; /* Adjust based on your design */
+  z-index: 1000; /* Ensure it stays on top */
+  overflow-y: auto; /* If you want the sidebar content to be scrollable */
+}
